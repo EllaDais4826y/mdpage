@@ -1,0 +1,11 @@
+node_modules/
+.env.local
+dist/
+coverage/
+build/
+*.js.map
+.next/
+out/
+npm-debug.log*
+*.log
+Thumbs.db
