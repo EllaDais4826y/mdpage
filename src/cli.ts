@@ -62,6 +62,11 @@ function parseArgs(argv: string[]): CliOptions | null {
     process.exit(1);
   }
 
+  if (path.extname(input).toLowerCase() !== '.md') {
+    console.error(`Error: Input file must have a .md extension: "${input}"`);
+    process.exit(1);
+  }
+
   let output: string | undefined;
   let title: string | undefined;
   let toc = true;
